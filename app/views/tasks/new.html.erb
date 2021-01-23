@@ -1,0 +1,15 @@
+<h1>Create a task</h1>
+
+<div>
+  <%= form_for(@task) do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <%= f.label :details %>
+    <%= f.text_field :details %>
+    <%= f.submit %>
+  <% end %>
+</div>
+
+<div class="nav">
+ <p> <%= link_to "Back", tasks_path %> </p>
+</div>
